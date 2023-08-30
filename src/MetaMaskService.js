@@ -30,7 +30,7 @@ export async function transfer(from, to, quantity) {
         to,
         value,
         gas: 21000,
-        nonce
+        nonce,
     };
 
     const tx = await web3.eth.sendTransaction(transaction);
